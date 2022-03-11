@@ -3,6 +3,18 @@ body {
   padding: 0px;
 }
 
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+li {
+  margin: 10px;
+}
+
 main {
   display: flex;
   flex-direction: row;
