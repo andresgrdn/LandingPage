@@ -3,19 +3,20 @@
   margin: 0px;
   padding: 0px;
 }
-
-.navbar {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-direction: row;
+html {
+  font-size: 62.5%;
 }
-
-li {
-  margin: 10px;
+.nav {
+  background: red;
+  padding: 1.2rem;
 }
-
+.nav li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 0 1.2rem;
+  color: #fff;
+}
 main {
   display: flex;
   flex-direction: row;
