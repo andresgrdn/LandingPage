@@ -24,7 +24,20 @@ main {
   align-items: center;
   margin: 0px 1em;
 }
-
+.section-left h1 {
+  font-size: 3.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.section-left p {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.btn-call-to-action {
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
 figure {
   width: 50vw;
   margin: auto;
