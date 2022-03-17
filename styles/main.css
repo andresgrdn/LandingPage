@@ -2,27 +2,36 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  border: 0px;
 }
 html {
   font-size: 62.5%;
 }
-.nav {
+.header {
   background: red;
-  padding: 1.2rem;
+  text-align: right;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.nav {
+  display: inline-block;
+  margin: 0 1rem;
 }
 .nav li {
-  list-style: none;
+  color: #fff;
   display: inline-block;
+  list-style: none;
   font-size: 1.6rem;
   margin: 0 1.2rem;
-  color: #fff;
 }
-main {
+.main-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0px 1em;
+  padding: 1rem 1.2rem 1rem 1.2rem;
 }
 .section-left h1 {
   font-size: 3.2rem;
@@ -38,11 +47,9 @@ main {
   padding: 0.8rem;
   border-radius: 0.5rem;
 }
-figure {
+.section-right figure {
   width: 50vw;
-  margin: auto;
 }
-
-img {
-  max-width: 50vw;
+.section-right img {
+  width: inherit;
 }
