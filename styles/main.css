@@ -46,11 +46,14 @@ html {
 .section-left h1 {
   font-size: 3.2rem;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .section-left p {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+}
+.section-left strong {
+  font-size: 2rem;
 }
 .btn-call-to-action {
   background: var(--btn-color);
@@ -58,6 +61,7 @@ html {
   font-size: 1.6rem;
   padding: 0.8rem;
   border-radius: 0.5rem;
+  margin-top: 1rem;
 }
 .section-right figure {
   width: 50vw;
