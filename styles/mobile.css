@@ -1,0 +1,6 @@
+.main-container {
+  flex-direction: column-reverse;
+}
+.section-right figure {
+  width: 100vw;
+}
