@@ -30,11 +30,18 @@ html {
   margin: 0 1rem;
 }
 .nav li {
-  color: var(--texto-claro);
   display: inline-block;
   list-style: none;
   font-size: 1.6rem;
   margin: 0 1.2rem;
+}
+.nav a {
+  text-decoration: none;
+  color: var(--texto-claro);
+}
+.nav a:hover {
+  text-decoration: underline;
+  font-weight: bold;
 }
 .main-container {
   background: var(--bkg-color);
