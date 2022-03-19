@@ -1,5 +1,6 @@
 .main-container {
   flex-direction: column-reverse;
+  justify-content: flex-end;
 }
 .section-right figure {
   width: 100vw;
