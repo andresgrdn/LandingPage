@@ -2,11 +2,15 @@
   --header-color: #191716;
   --footer-color: #191716;
   --btn-color: #f18f01;
+  --btn-color-hover: #f89704;
+  --btn-color-active-primary-shadow: #19171641;
+  --btn-color-active-secondary-shadow: #f18f01;
   --bkg-color: #e0e2db;
   --texto-claro: #e0e2db;
   --texto-oscuro: #191716;
   --img-sombra: #6b7d7d;
   --img-border: #e0e2db;
+  --primary-font: "Raleway", sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -15,6 +19,7 @@
   border: 0px;
 }
 html {
+  font-family: var(--primary-font);
   font-size: 62.5%;
 }
 .header-container {
@@ -48,6 +53,8 @@ html {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  height: 90vh;
+  min-height: 60rem;
   padding: 1rem 1.2rem 1rem 1.2rem;
 }
 .section-left h1 {
@@ -65,10 +72,19 @@ html {
 .btn-call-to-action {
   background: var(--btn-color);
   color: var(--texto-oscuro);
+  box-shadow: inset 0.25rem 0.25rem var(--btn-color-active-secondary-shadow),
+    inset -0.25rem -0.25rem var(--btn-color-active-primary-shadow);
   font-size: 1.6rem;
   padding: 0.8rem;
   border-radius: 0.5rem;
   margin-top: 1rem;
+}
+.btn-call-to-action:hover {
+  background: var(--btn-color-hover);
+}
+.btn-call-to-action:active {
+  box-shadow: inset 0.25rem 0.25rem var(--btn-color-active-primary-shadow),
+    inset -0.25rem -0.25rem var(--btn-color-active-secondary-shadow);
 }
 .section-right figure {
   width: 50vw;
@@ -81,6 +97,9 @@ html {
 }
 .footer-container {
   background: var(--footer-color);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   text-align: center;
   padding: 2rem;
 }
