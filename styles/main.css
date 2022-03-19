@@ -1,10 +1,11 @@
 :root {
   --header-color: #191716;
   --footer-color: #191716;
-  --btn-color: #f18f01;
-  --btn-color-hover: #f89704;
+  --btn-bkg-color: #f18f01;
+  --btn-bkg-color-hover: #f89704;
   --btn-color-active-primary-shadow: #19171641;
   --btn-color-active-secondary-shadow: #f18f01;
+  --texto-shadow-color: #191716;
   --bkg-color: #e0e2db;
   --texto-claro: #e0e2db;
   --texto-oscuro: #191716;
@@ -70,17 +71,18 @@ html {
   font-size: 2rem;
 }
 .btn-call-to-action {
-  background: var(--btn-color);
-  color: var(--texto-oscuro);
+  background: var(--btn-bkg-color);
+  color: var(--texto-claro);
   box-shadow: inset 0.25rem 0.25rem var(--btn-color-active-secondary-shadow),
     inset -0.25rem -0.25rem var(--btn-color-active-primary-shadow);
   font-size: 1.6rem;
-  padding: 0.8rem;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
   border-radius: 0.5rem;
   margin-top: 1rem;
 }
 .btn-call-to-action:hover {
-  background: var(--btn-color-hover);
+  background: var(--btn-bkg-color-hover);
 }
 .btn-call-to-action:active {
   box-shadow: inset 0.25rem 0.25rem var(--btn-color-active-primary-shadow),
@@ -106,4 +108,9 @@ html {
 .footer-container p {
   color: var(--texto-claro);
   font-size: 1.2rem;
+}
+.footer-container a {
+  text-decoration: none;
+  font-weight: 600;
+  color: inherit;
 }
