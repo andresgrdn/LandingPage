@@ -7,6 +7,7 @@
   --texto-oscuro: #191716;
   --img-sombra: #6b7d7d;
   --img-border: #e0e2db;
+  --primary-font: "Raleway", sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -15,6 +16,7 @@
   border: 0px;
 }
 html {
+  font-family: var(--primary-font);
   font-size: 62.5%;
 }
 .header-container {
